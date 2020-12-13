@@ -1,0 +1,289 @@
+\documentclass[a4paper, titlepage,12pt]{article}
+\usepackage[margin=3.7cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish,english]{babel}
+\usepackage{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
+\usepackage[backend=biber,citestyle=ieee]{biblatex}
+\usepackage[yyyymmdd]{datetime}
+
+\title{Inlämmningsuppgift 1}
+
+\author{Adam Temmel (adte1700)}
+
+\begin{document}
+	\maketitle
+
+	\section*{Uppgift 1 - Självkostnadskalkyl}
+		AB Frys och Frust kan tillverka artiklarna A, Beller C, vilka alla kräver samma slag av material, arbete och maskiner. AB Frys och Frust brukar kalkylera sina produkter efter en kalkyltabellmedföljande utseende.Per år producerar företaget 3 000 st A, 2000 st B, och 1 000 st C.
+		\begin{center}
+			\begin{tabular}{ |c|c|c|c|c| }
+				\hline
+				& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{Total} \\
+				\hline
+				Direkta materialkostanden per st. & 8:- & 10:- & 12:- & 56 000:- \\
+				\hline
+				MO-pålägg & 25\% & 25\% & 25\% & \\
+				\hline
+				Direkta löner per st. & 9:- & 9:- & 10:- & 55 000:-\\
+				\hline
+				TO-pålägg & 60\% & 60\% & 60\% & \\
+				\hline
+				\textbf{Summa tillverkningskostnader} & \textbf{?} & \textbf{?} & \textbf{?} & \\
+				\hline
+				AO-pålägg & 40\% & 40\% & 50\% & \\
+				\hline
+				\textbf{Självkostnad per st.} & \textbf{?} & \textbf{?} & \textbf{?} & \\
+				\hline
+			\end{tabular}
+		\end{center}
+		Färdigställ tabellen och beräknakostnaden/styck samt täckningsbidraget.
+
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				& A & B & C \\
+				\hline
+				Direkt materialkostnad (dM) & 8:- & 10:- & 12:- \\
+				\hline
+				Direkta löner per st(dL) & 9:- & 9:- & 10:- \\
+				\hline
+				Materialkostnad (MO) & 2:- & 2.5:- & 3:- \\
+				fördelas som (MO / dM) & $8 \cdot 0.25$ & $10 \cdot 0.25$ & $12 \cdot 0.25$ \\
+				$(\frac{14k}{ 56k}) = 0.25$ & & & \\
+				\hline
+				Tillverkningskostnad (TO) & 5.4:- & 5.4:- & 6:- \\
+				fördelas som (TO / dL) & $9 \cdot 0.6$ & $9 \cdot 0.6$ & $10 \cdot 0.6$ \\
+				\hline
+				Totala tillverkningskostnader (TVK) & 24.4 & 26.9 & 29.4 \\
+				är då summan av alla kostnader (dM + dL + MO + TO) & & & \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Administrationskostnader (AO) & 9.76 & 10.76 & 15.5 \\
+				fördelas som (AO / TvK) & $24.4 \cdot 0.4$ & $26.9 \cdot 0.4$ & $31 \cdot 0.5$ \\
+				$(\frac{63 200}{158 000}) = 0.4$ & & & \\
+				\hline
+				Självkostnad per st. & 34.16 & 37.66 & 46.5 \\
+				är TvK + AO & 24.4 + 9.76 & 26.9 + 10.76 & 31 + 15.5 \\
+				\hline
+				Täckningsbidrag (TB) & 175200 & 14680 & 3500 \\
+				beskrivs som intäkter - rörliga kostnader& $3000 \cdot 40$ & $2000 \cdot 45$ & $1000 \cdot 50$\\
+				(St. tillverkad $\cdot$ Intäkt/st.) & $ - 3000 \cdot 34.16$ & $-2000 \cdot 37.66$ & $-1000 \cdot 46.5$ \\
+				- (St. tillverkad $\cdot$ Självkostnad/st.) & & & \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+		Slutgilitga tabellen blir då:
+
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{Total} \\
+				\hline
+				Direkta materialkostanden per st. & 8:- & 10:- & 12:- & 56 000:- \\
+				\hline
+				MO-pålägg & 25\% & 25\% & 25\% & \\
+				\hline
+				Direkta löner per st. & 9:- & 9:- & 10:- & 55 000:-\\
+				\hline
+				TO-pålägg & 60\% & 60\% & 60\% & \\
+				\hline
+				\textbf{Summa tillverkningskostnader} & \textbf{24.4:-} & \textbf{26.9:-} & \textbf{31:-} & \textbf{157 400:-}\\
+				\hline
+				AO-pålägg & 40\% & 40\% & 50\% & \\
+				\hline
+				\textbf{Självkostnad per st.} & \textbf{34.16:-} & \textbf{37.66:-} & \textbf{46.5:-} & \textbf{221 200:-}\\
+				\hline
+				Intäkt per st. & 40:- & 45:- & 50:- & \\
+				\hline
+				\textbf{TB} & \textbf{17 520:-} & \textbf{14 680:-} & \textbf{3 500:-} & \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+	\section*{Uppgift 2 - ABC kalkyl}
+	Antag att tillverkningsomkostnaderns (TO) uppgår till 600 000kr per åroch antalet arbetstimmar i produktionen är 4000 timmar så att TO-pålägget blir 600 tkr / 4000 tim = 150 kr / tim. Antag att den direkta lönekostnaden är 100kr/tim för alla produkter, samt att AB Frys och Frust uppskattar att: 60\% av TO orsakas av kostnadsdrivaren direkt arbetstid. 20\% av TO orsakas av kostnadsdrivaren antal tillverkningsorder 20\% av TO orsakas av kostnadsdrivaren antal artikelnummer.
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				& A & B & C & Totalt \\
+				\hline
+				Direkt arbetstid & 0.2 tim/st & 0.3 tim/st & 0.8 tim/st & 4000 tim/år \\
+				\hline
+				Tillverkningsorder & 200 per år & 200 per år & 150 per år & 1000 per år \\
+				\hline
+				Artikelnummer & 1 st & 1 st & 1 st & 25 st \\
+				\hline
+				Årsantal & 3000 & 2000 & 1000 & \\
+				\hline
+			\end{tabular}
+		\end{center}
+		Beräkna kostnad/styck för produkterna A, B, och C enligt modellen akvitivetsbaserad kostnadskalkyl.
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{Totalt} \\
+				\hline
+				Direkt arbetstid & 12 min & 18 min & 48 min & 4000tim/år \\
+				\hline
+				Tillverkningsorder & 200 per år & 200 per år & 150 per år & 1000 per år \\
+				\hline
+				Antal komponenter & 1 & 1 & 1 & 25 \\
+				\hline
+				Årsantal & 3000st & 2000st & 1000st & 6000st \\
+				\hline
+				\textbf{Kostnadsdrivare} & & \textbf{Kostnad/enhet} & &\\
+				\hline
+				Arbetstimmar & $(0.6\cdot0.6)Mkr/4000h$ & 90kr/h & & \\
+				\hline
+				Tillverkningsorder & $(0.2\cdot0.6)Mkr/1000st$ & 120kr/order & & \\
+				\hline
+				\emph{n} Komponenter & $(0.2\cdot0.6)Mkr/25st$ & 4800kr/\emph{n} och år & & \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+		\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{A} & \textbf{Kostnad/st} \\
+				\hline
+				dL & $0.2h \cdot 100kr = 20kr$ \\
+				\hline
+				Arbetstimme & $0.2h \cdot 90kr = 18kr$ \\
+				\hline
+				Order & $200st \cdot 120kr / 3000 = 8kr$ \\
+				\hline
+				Komponenter & $1 \cdot 4800 / 25 = 192kr$ \\
+				\hline
+				Summa & $20 + 18 + 8 + 192 = 238$ \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+		\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{B} & \textbf{Kostnad/st} \\
+				\hline
+				dL & $0.3h \cdot 100kr = 30kr$ \\
+				\hline
+				Arbetstimme & $0.3h \cdot 90kr = 27kr$ \\
+				\hline
+				Order & $200st \cdot 120kr / 2000 = 12kr$ \\
+				\hline
+				Komponenter & $1 \cdot 4800 / 25 = 192kr$ \\
+				\hline
+				Summa & $30 + 27 + 12 + 192 = 261kr$ \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+		\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{C} & \textbf{Kostnad/st} \\
+				\hline
+				dL & $0.8h \cdot 100kr = 80kr$ \\
+				\hline
+				Arbetstimme & $0.8h \cdot 90kr = 72kr$ \\
+				\hline
+				Order & $150st \cdot 120kr / 1000 = 18kr$ \\
+				\hline
+				Komponenter & $1 \cdot 4800 / 25 = 192kr$ \\
+				\hline
+				Summa & $80 + 72 + 18 + 192 = 362kr$ \\
+				\hline
+			\end{tabular}
+		\end{center}
+
+	\section*{Uppgift 3 - Nuvärdeskalkyl}
+		\subsection*{a)} AB Frys och Frust har två olika kapitalkällor $K_1$ och $K_2$. $K_1$ är ett banklån på värdet 2 miljoner kronor och ett återbäringskrav på 4\%, och $K_2$ är riskkapital med ett marknadsvärde på 1 miljon kronor och ett återbäringskrav på 12\%. Beräknaden viktade kostnaden av kapital (WACC) och använd det som kalkylränta.\\
+
+$K_1 = 2 000 000kr$ med $4\%$ avkastningskrav\\
+
+$K_2 = 1 000 000kr$ med $12\%$ avkastningskrav\\
+
+$K = K_1 + K_2$\\
+
+$r_1 = 4\%$\\
+
+$r_2 = 12\%$\\
+
+$WACC = \frac{K_1}{K} \cdot r_1 + \frac{K_2}{K} \cdot r_2 = \frac{200000000}{3000000} \cdot 0.12 = 0.0666667 = 6.67\%$\\
+
+		\subsection*{b)} AB Frys och Frust ska nu investera åttamiljoner i en eller två nya produkter, produkt \textbf{D}, \textbf{E}, eller \textbf{F}. Du beaktar kassaflöden över fem års tid och kommer fram till tabellen nedan där respektive projekts årliga kassaflöden ges för fem år. Vilket/vilka projekt rekommenderas enligt nunettovärdesmetodengivet att du använder ditt WACC som diskonteringsfaktor? Alla tre investeringar har samma grundinvestering \emph{G}, och alla värden i tabellen är i tkr.
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|}
+					\hline
+					Produkt & \emph{G} & År 1 & År 2 & År 3 & År 4 & År 5 \\
+					\hline
+					D & -400 & 100 & 110 & 120 & 130 & 140 \\
+					\hline
+					E & -400 & 80 & 85 & 130 & 160 & 180 \\
+					\hline
+					F & -400 & 105 & 110 & 115 & 125 & 135 \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+			$WACC = 6.67\%$\\
+
+			$NNUV = \sum_{i=1}^{n} \frac{x_i}{(1 + r)^n} - G$ \\
+
+			$N$ är den ekonomiska livslängden, $r$ är kalkylräntan, $x_i$ är kassaflödet år $i$ och $G$ är grundinvesteringen. Vissa värden kan man nu stoppa in.\\
+
+			$NNUV = \sum_{i=1}^{5} \frac{x_i}{(1+0.067)^5} - 400$\\
+
+			$D = \frac{100}{1.383} + \frac{110}{1.383} + \frac{120}{1.383} + \frac{130}{1.383} + \frac{140}{1.383} - 400 = 72.307 + 79.537 + 86.768 + 93.999 + 101.229 - 400 = 33.84$ tusen kr\\
+
+			$E = \frac{80}{1.383} + \frac{85}{1.383} + \frac{130}{1.383} + \frac{160}{1.383} + \frac{180}{1.383} - 400 = 59.147$ tusen kr\\
+
+			$F = \frac{105}{1.383} + \frac{110}{1.383} + \frac{115}{1.383} + \frac{125}{1.383} + \frac{135}{1.383} - 400 = 26.609$ tusen kr\\
+
+		\subsection*{c)} Vad har investeringarna i \textbf{D}, \textbf{E}, och \textbf{F} för internränta?
+		
+			D: $-400 + \frac{100}{1 + R} + \frac{110}{(1 + R)^2} + \frac{120}{(1 + R)^3} + \frac{130}{(1 + R)^4} + \frac{140}{(1 + R)^5} = 0$\\
+
+			$D = 0.143 = 14.3\%$\\
+
+			E: $-400 + \frac{80}{1 + R} + \frac{85}{(1 + R)^2} + \frac{130}{(1 + R)^3} + \frac{160}{(1 + R)^4} + \frac{180}{(1 + R)^5} = 0$\\
+
+			$E = 0.150 = 15\%$\\
+
+			F: $-400 + \frac{105}{1 + R} + \frac{110}{(1 + R)^2} + \frac{115}{(1 + R)^3} + \frac{125}{(1 + R)^4} + \frac{135}{(1 + R)^5} = 0$\\
+
+			$F = 0.138 = 13.8\%$\\
+
+		\subsection*{d)} Vilken investering är mest effektiv enligt nuvärdekvoten?\\
+
+		Nuvärdeskvoten $NUV$ blir $\frac{NNUV}{G}$ så:\\
+
+		$D = \frac{33.84}{400} = 0.0846$ tusen kr $= 84.6$kr\\
+
+		$E = \frac{59.147}{400} = 0.1478675$ tusen kr $= 14.8$kr\\
+
+		$F = \frac{26.609}{400} = 0.0665225$ tusen kr $= 66.5$kr\\
+
+		$D$ är bäst, då högre = bättre.\\
+
+		\subsection*{e)} Vad är annuiteten för \textbf{D}, \textbf{E}, respektive \textbf{F}?\\
+
+		$\alpha = \frac{r}{1 + (1 + r)^-n} = \frac{0.067}{1-(1+0.067)^-5} = 0.242$\\
+
+		$ANN = NNUV \cdot \alpha$\\
+
+		D: $33.84 \cdot 0.242 = 8.18928$ tusen kr $\approx 8200$kr\\
+
+		E: $59.147 \cdot 0.242 = 14.313574$ tusen kr $\approx 14 300$ kr\\
+
+		F: $26.609 \cdot 0.242 = 26.609$ tusen kr $\approx 26 600$ kr\\
+\end{document}
