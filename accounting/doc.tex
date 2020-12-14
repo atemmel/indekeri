@@ -9,11 +9,13 @@
 \usepackage[backend=biber,citestyle=ieee]{biblatex}
 \usepackage[yyyymmdd]{datetime}
 
+\addbibresource{literature.bib}
+
 \title{Inlämmningsuppgift 2: Bokföring}
 
 \author{Adam Temmel (adte1700)}
 
-\newcommand\Taccount[3][1.5cm]%
+\newcommand\Taccount[3][4.5cm]%
    {{\renewcommand\arraystretch{1.3}%
     \begin{tabular}[t]{@{}p{#1}|p{#1}@{}}
     \multicolumn{2}{@{}c@{}}{#2}\\
@@ -25,11 +27,517 @@
 \begin{document}
 	\maketitle
 
-	\section*{Uppgift 1 - }
-	\Taccount{Assets}{
-		Debit & Credits\\
-		Increase & Decrease\\
-		}
-	\section*{Uppgift 2 - }
-	\section*{Uppgift 3 - }
+	\section{Genomför redovisningen. Använd gärna penna och papper, bokföringsprogram är inte tillåtet. Automatiskt genererade rapporter godtas inte.}
+		\subsection{Skapa verifikationer för varje affärshändelse.}
+			Banken belastar bankkontot med 600kr för sina tjänster (momsfri), e-faktura finns
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bankkostnader (6750), 600kr & Bank (1930), 600kr\\
+					\hline
+					Summa: 600kr & Summa: 600kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta betalar resultat av momsredovisning för tidigare år in till skatteverket (momsfri)
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Momsredovisning (2650), 4 600kr & Skattekonto (1630), 4 600kr\\
+					\hline
+					Summa: 4 600kr & Summa: 4 600kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta får en faktura från hennes hemsideleverantör, slutsumma 1 000kr
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					IT-Tjänst (6540), 750kr & Leverantörsskulder (2440), 1 000kr\\
+					\hline
+					Ingående moms (2640), 250kr & \\
+					\hline
+					Summa: 1 000kr & Summa: 1 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+			
+			
+			Agneta skickar faktura för utförda tjänster till kund A, slutsumma $28\ 125$kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 28 125kr & Försäljning av tjänster (3040), 21 093.75kr\\
+					\hline
+					& Utgående moms (2610), 7 031.25kr\\
+					\hline
+					Summa: 28 125kr & Summa: 28 125kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Hyresvärden skickar fakturan över årets hyra på 15 000kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Lokalhyra (5010), 11 250kr & Leverantörsskulder (2440), 15 000kr\\
+					\hline
+					Ingående moms (2640), 3 750kr & \\
+					\hline
+					Summa: 15 000kr & Summa: 15 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta skickar faktura till kund B, slutsumma $199 000$kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 199 000kr & Försäljning av tjänster (3040), 149 250kr\\
+					\hline
+					& Utgående moms (2610), 49 750kr  \\
+					\hline
+					Summa: 199 000kr & Summa: 199 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta betalar hemsideleverantörens faktura.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Leverantörsskulder (2440), 1 000kr & Bank (1930), 1 000kr\\
+					\hline
+					Summa: 1 000kr & Summa: 1 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Kund A betalar fakturan.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 28 125kr &  Kundfordringar (1510), 28 125kr\\
+					\hline
+					Summa: 28 125kr & Summa: 28 125kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agnes betalar hyran.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Leverantörsskulder (2440), 15 000kr & Bank (1930), 15 000kr \\
+					\hline
+					Summa: 15 000kr & Summa: 15 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta köper en bärbar dator i en elektronikbutik och betalar 20 000kr med bankkort.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Förbrukningsinventarier (5410) 15 000kr & Bank (1930), 20 000kr \\
+					\hline
+					Ingående moms (2640) 5 000kr & \\
+					\hline
+					Summa: 15 000kr & Summa: 15 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta skickar en faktura till kund C på 772 875kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 772 875kr & Försäljning av tjänster (3040), 579 656.25kr \\
+					\hline
+					& Utgående moms (2610) 193 218.75kr \\
+					\hline
+					Summa: 772 875kr & Summa: 772 875kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Kund B betalar fakturan.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 199 000kr & Kundfordringar (1510), 199 000kr \\
+					\hline
+					Summa: 199 000kr & Summa: 199 000kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+			Agneta skickar faktura till kund D på 85 930kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 85 930kr & Försäljning av tjänster (3040), 64 447.5kr \\
+					\hline
+					& Utgående moms (2610) 21 482.5kr\\
+					\hline
+					Summa: 85 930kr & Summa: 85 930kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Kund C betalar fakturan.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 772 875kr & Kundfordringar (1510), 772 875kr \\
+					\hline
+					Summa: 772 875kr & Summa: 772 875kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta skickar en faktura till kund E på 343 750kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 343 750kr & Försäljning av tjänster (3040), 257 812.5kr \\
+					\hline
+					& Utgående moms (2610) 85 937.5kr \\
+					\hline
+					Summa: 343 750kr & Summa: 343 750kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Kund D och E betalar sina fakturor samma dag.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 85 930kr & Kundfordringar (1510), 85 930kr \\
+					\hline
+					Summa: 85 930kr & Summa: 85 930kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 343 750kr & Kundfordringar (1510), 343 750kr \\
+					\hline
+					Summa: 343 750kr & Summa: 343 750kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta skickar en till faktura till kund A på 93 750kr.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Kundfordringar (1510), 93 750kr & Försäljning av tjänster (3040), 70 312.5kr \\
+					\hline
+					& Utgående moms (2610) 23 437.5kr \\
+					\hline
+					Summa: 93 750kr & Summa: 93 750kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta får och betalar fakturan från en förening, avgift 950kr (momsfri)
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Föreningsavgifter (6980), 950kr & Leverantörsskulder (2440), 950kr \\
+					\hline
+					Summa: 950kr & Summa: 950kr \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Leverantörsskulder (2440), 950kr & Bank (1930), 950kr \\
+					\hline
+					Summa: 950kr & Summa: 950kr \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Agneta laddar mobilens kontantkort med 300kr och betalar med bankkort (bokförs momsfri).
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Mobiltelefoni (6212), 300kr & Bank (1930), 300kr \\
+					\hline
+					Summa: 300kr & Summa: 300kr \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+
+			Kund A betalar fakturan.
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Debet} & \textbf{Kredit} \\
+					\hline
+					Bank (1930), 93 750kr & Kundfordringar (1510), 93 750kr \\
+					\hline
+					Summa: 93 750kr & Summa: 93 750kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+
+			\subsection{Bokför ingående verifikationer från föregående uppgift på respektive konto.}
+			\Taccount{Bank (1930)}{
+				(2650) 4 600kr & (6750) 600kr\\
+				(2010) 18 900kr& (2440) 1 000kr\\
+				(1510) 28 125kr & (2440) 15 000kr\\
+				(1510) 199 000kr & (5410) 15 000kr\\
+				(1510) 772 875kr & (2640) 5 000kr\\ 
+				(1510) 85 930kr & (2440) 950kr\\
+				(1510) 343 750kr & (6212) 300kr\\
+				(1510) 93 750kr & \\
+				Summa: 1 546 930kr & Summa: 37 850kr \\
+			}\\\\
+			Totalt: 1 509 080kr.
+
+			\Taccount{Bankkostnader (6750)}{
+				(1930) 600kr & \\
+				Summa: 600kr & Summa: 0kr\\
+			}\\\\
+			Vinst: 600kr.
+
+			\Taccount{Momsredovisning (2650)}{
+				(1630) 4 600kr & (1930) 4 600kr\\
+				Summa: 4 600kr & Summa: 4 600kr \\
+			}\\\\
+			Vinst: 0kr.
+
+			\Taccount{Skattekonto (1630)}{
+				& (2650) 4 600kr\\
+				Summa: 0kr & Summa: 4600kr\\
+			}\\\\
+			Förlust: 4600kr.
+
+			\Taccount{Eget kapital (2010)}{
+				& (1930) 18 900kr \\
+				Summa: 0kr & Summa: 18 900kr \\
+			}\\\\
+			Förlust: 18 900kr.
+
+			\Taccount{IT-Tjänst (6540)}{
+				(2440) 750kr & \\
+				Summa: 750kr & Summa 0kr\\
+			}\\\\
+			Vinst: 750kr.
+
+			\Taccount{Leverantörsskulder (2440)}{
+				(1930) 1 000kr & (6540) 750kr \\
+				(1930) 950kr & (2640) 250kr \\
+				(1930) 15 000kr& (5010) 11 250kr \\
+				& (2640) 3 750kr \\
+				& (6980) 950kr \\
+				Summa: 16 950kr & 16 950kr\\
+			}\\\\
+			Vinst: 0kr.
+
+			\Taccount{Ingående moms (2640)}{
+				(2440) 250kr & \\
+				(2440) 3 750kr & \\
+				(1930) 5 000kr & \\
+				Summa: 9 000kr & Summa: 0kr \\
+			}\\\\
+			Vinst: 9 000kr.
+
+			\Taccount{Kundfordringar (1510)}{
+				(3040) 21 093.75kr & (1930) 28 125kr \\
+				(3040) 149 250kr & (1930) 199 000kr\\
+				(3040) 579 656.25kr & (1930) 772 875kr\\
+				(2610) 193 218.75kr & (2610) 85 930kr \\
+				(3040) 64 447.5kr & (1930) 343 750kr \\
+				(2610) 21 482.5kr & (1930) 93 750kr\\
+				(3040) 257 812.5kr & \\
+				(2610) 85 937.5kr & \\
+				(3040) 70 312.5kr & \\
+				(2610) 23 437.5kr & \\
+				(2610) 7 031.25kr & \\
+				(2610) 49 750kr & \\
+				Summa: 1 523 430kr & 1 523 430kr\\
+			}\\\\
+			Vinst: 0kr.
+
+			\Taccount{Försäljning av tjänster (3040)}{
+				& (1510) 21 093.75kr \\
+				& (1510) 149 250kr \\
+				& (1510) 579 656.25kr \\
+				& (1510) 64 447.5kr \\
+				& (1510) 257 812.5kr \\
+				& (1510) 70 312.5kr \\
+				Summa: 0kr & Summa: 1 142 572.5kr\\
+			}\\\\
+			Vinst: 1 142 572.5kr
+			
+			\Taccount{Utgående moms (2610)}{
+				& (1510) 7 031.25kr \\
+				& (1510) 49 750kr \\
+				& (1510) 193 218.75kr \\
+				& (1510) 21 482.5kr \\
+				& (1510) 85 937.5kr \\
+				& (1510) 23 437.5kr \\
+				Summa: 0kr & Summa: 380 857.5kr\\
+			}\\\\
+			Förlust: 357 857.5kr
+
+			\Taccount{Lokalhyra (5010)}{
+				(2440) 11 250 & \\
+				Summa: 11 250kr & Summa: 0kr\\
+			}\\\\
+			Förlust: 11 250kr
+			
+			\Taccount{Förbrukningsinventarier (5410)}{
+				(1930) 15 000kr & \\
+				Summa: 15 000kr & Summa: 0kr\\
+			}\\\\
+			Förlust: 15 000kr
+
+			\Taccount{Föreningsavgifter (6980)}{
+				(2440) 950kr & \\
+				Summa: 950kr & Summa: 0kr\\
+			}\\\\
+			Förlust: 950kr
+
+			\Taccount{Mobiltelefoni (6212)}{
+				(1930) 300kr & \\
+				Summa: 300kr & Summa: 0kr \\
+			}\\\\
+			Förlust: 300kr
+		\subsection{Gör ett bokslut. Hur stor blir årets vinst eller förlust?}
+			Resultaträkning:
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					Försäljning av tjänster (3040), 1 142 572.5kr  & IT-tjänster (6540), 750kr\\
+					\hline
+					& Lokalhyra (5010), 11 250kr \\
+					\hline
+					& Förbrukningsinventarier (5410), 15 000kr \\
+					\hline
+					& Föreningsavgifter (6980), 950kr \\
+					\hline
+					& Mobiltelefoni (6212), 300kr \\
+					\hline
+					& Bankkostnader (6750), 600kr \\
+					\hline
+					& Vinst: 1 113 722.5kr\\
+					\hline
+					Summa: 1 142 572.5kr & Summa: 1 142 572.5kr \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\subsection{Gör en balansräkning.}
+			Balansräkning:
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Tillgångar} & \textbf{Skulder och eget kapital} \\
+					\hline
+					Bank (1930), 1 509 080kr & Eget kapital (2010), 18 900kr \\
+					\hline
+					Skattekonto (1630), -4 600kr & Momsredovisning (2650), 0kr \\
+					\hline
+					& Leverantörsskulder (2440), 0kr \\
+					\hline
+					& Ingående moms (2640), -9 000kr \\
+					\hline
+					& Utgående moms (2610), 380 857.5kr \\
+					\hline
+					& Vinst: 1 113 722.5kr \\
+					\hline
+					Summa: 1 504 480kr & Summa: 1 504 480kr\\
+					\hline
+				\end{tabular}
+			\end{center}
+	\section{Vilka möjligheter finns bokföringsmässigt att behandla köpet av den bärbara datorn?}
+		\subsection{Omedelbart avdrag}
+		Det är inte omöjligt att datorn går att dras av som korttidsinventarium, vilket då medför att den landar på "förbrukningsinventarier" inom bokföringen. Detta förutsätter att datorn kostar mindre än 23 650kr, vilket råkar vara halva prisbasbeloppet för år 202\cite{skatteverket}. Om detta skall ske så bör även hela datorn ägas av Agneta. Skatteverket menar att om datorn nyttjats av flera individer så bör var och en göra värdeminskningsavdrag av "sin" del. För att en produkt ska gillas som korttidsinventarium så skall Agneta dessutom kunna bevisa att hon inom 3 år behöver investera i en helt ny dator, annars är hon ej berättigad till denna avskrivnignsmetod.
+		\subsection{Räkenskapslig avskrivning}
+			För att denna metod skall nyttjas så ska det skattemässiga avdraget motsvara den avdragning som dessutom sker i bokslutet. Balansräkningen skall dessutom tillgodose ett värde som leker väl med det skattemässiga värdet. Skatteverket menar på att det finns två huvudsakliga tillvägagångssätt för denna metod\cite{skatteverket}.
+
+		\subsubsection{Huvudregel}
+			Huvudregeln säger att man som högst får dra av 30\% av datorns bokförda värde vid årets start.
+		\subsubsection{Kompletteringsregeln}
+			Kompletteringsregeln säger istället att datorn kan bli helt avskriven genom en kontinuerlig 20\% avskrivning över fem år. För att få nyttja denna regel bör saker såsom anskaffningskostnader och anskaffningsår vara noterade.
+
+		\subsection{Restvärdesavskrivning}
+			Den här metoden liknar den föregående, men här måste inte det bokförda värdet för datorn vara densamma som det skattemässiga värdet. Den här metoden har dock ingen kompletteringsregel, och den högsta avskrivning som får ske är på 25\% \cite{skatteverket}.
+	\section{Vad är skillnad mellan kontantmetoden och fakturametoden? Vilka verifikationer skulle behöver ändras eller inte bokföras? Vad är för- och nackdelarna för Agnetas företag?}
+		Om fakturametoden kan ses som den "traditionella" vägen att bokföra, så är kontantmetoden lite mindre komplex. I kontantmetoden så bokför du bara när pengar rullar in eller ut, så stegen då du exempelvis får in en faktura försummas. Kontantmetoden får enbart nyttjas för företag som omsätter över 3 miljoner kronor\cite{speedledger}.
+
+		För det här företaget är givetvis båda metoderna möjliga. Att använda sig av fakturametoden medför mer slit med bokföringen, men den blir också som konsekvens mer tydlig. Om företaget skulle växa bortom gränsen på 3 miljoner så behöver bokföringsprocessen inte heller omjusteras. Kontantmetoden kan här istället strömlinjeforma bokföringsprocessen någor, men medför en aningen mindre detaljerad bokföring.
+
+		\printbibliography
 \end{document}
